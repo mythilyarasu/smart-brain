@@ -20,7 +20,7 @@ class Register extends React.Component{
             this.setState({password:event.target.value})
         }
         onSubmitSignIn = ()=> {
-       fetch('https://smartbrainbackend-viuj.onrender.com/register',{
+       fetch("https://smartbrainbackend-viuj.onrender.com/register",{
         method: 'post',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify({
